@@ -11,68 +11,95 @@
   <title>Document</title>
 </head>
 <body>
-  <nav class = "navigation"></nav>
-  <main>
-    <div class = "entry">
-      <div class="entry__image"></div>
-      <div class="entry__content">
-    	  <div class="entry__text">
-          <div class="entry__text1">
-            <p>Lorem ipsum dolor</p>
+
+    <div class="wrapper">
+        <nav class = "navigation">
+          <img src="images/logo.png" alt="logo" class="entry_imgnav">
+          <div class="navigation__hamburger">
+            <span class="navigation__line is-active"></span>
+            <span class="navigation__line"></span>
+            <span class="navigation__line"></span>
           </div>
-          <div class="entry__text2">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+
+            <ul class="navigation__content">
+              <li class = "navigation__list" ><a href="#" class="navigation__link"> Lorem ipsum</a></li>
+              <li class = "navigation__list" ><a href="#" class="navigation__link"> dolor sit </a></li>
+            </ul>
+            
+        </nav>
+
+        <div class="overlay"></div>
+          <div class = "entry">
+            <div class="entry__image"></div>
+            <div class="entry__content">
+          	  <div class="entry__text">
+                <div class="entry__text1">
+                  <!-- <p>Lorem ipsum dolor</p> -->
+                </div>
+                <div class="entry__text2 fade">
+                  <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                </div>
+              </div>
+              <div class="entry__buttons">
+                <a class = "entry__button1 fade" href="#"> Lorem ipsum 1 lorem</a>
+                <a class = "entry__button2 fade" href="#"> Lorem ipsum 2 lorem</a>
+              </div>
+            </div>
+        </div>
+
+        <div class = "workout">
+          <div class = "workout__imgWrapper fade">
+            <img class = "workout__img" src="./images/5n.jpg" alt="first workout image">
+          </div>
+          <div class="workout__content">
+        	  <div class="workout__text">
+              <div class="workout__text1 fade">
+                <p>Lorem ipsum dolor</p>
+              </div>
+              <div class="workout__text2 fade">
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+            </div>
+            <div class="workout__buttons">
+              <a class = "workout__button1 fade" href="#"> Lorem ipsum 1 lorem</a>
+              <a class = "workout__button2 fade" href="#"> Lorem ipsum 2 lorem</a>
+            </div>
+        </div>
+
+
+        <!-- Live do wyjebania, wchodzi lista zdjęć na grid która wjeżdzą od boku -->
+        <div class = "live">
+          <div class="live__images">
+            <div > <img class = "live__img live__img1 fade" src="images/4.jpg" alt="live img"></div>
+            <div > <img class = "live__img live__img2 fade" src="images/4.jpg" alt="live img"></div>
+            <div > <img class = "live__img live__img3 fade" src="images/4.jpg" alt="live img"></div>
+            <div > <img class = "live__img live__img4 fade" src="images/4.jpg" alt="live img"></div>
+            <div > <img class = "live__img live__img5 fade" src="images/4.jpg" alt="live img"></div>
+            <div > <img class = "live__img live__img6 fade" src="images/4.jpg" alt="live img"></div>
+          </div>
+          <div class="live__content">
+              <div class="live__text1 fade">
+                <h2>Lorem ipsum somesome</h2>
+              </div>
+              <div class="live__text2 fade">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum tempora ratione dicta dolore, maxime animi rerum vel esse exercitationem temporibus voluptates non, fuga quod. Libero quod alias reiciendis sint!</p>
+              </div>
+            <div class="live__button fade">
+              <a class = "live__button1" href="#"> Lorem ipsum 1 lorem</a>
+            </div>
           </div>
         </div>
-        <div class="entry__buttons">
-          <a class = "entry__button1" href="#"> Lorem ipsum 1 lorem</a>
-          <a class = "entry__button2" href="#"> Lorem ipsum 2 lorem</a>
+
         </div>
-      </div>
     </div>
 
-    <div class = "workout">
-      <div class = "workout__img_div"></div>
-      <div class="workout__content">
-    	  <div class="workout__text">
-          <div class="workout__text1">
-            <p>Lorem ipsum dolor</p>
-          </div>
-          <div class="workout__text2">
-            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
-          </div>
-        </div>
-        <div class="workout__buttons">
-          <a class = "workout__button1" href="#"> Lorem ipsum 1 lorem</a>
-          <a class = "workout__button2" href="#"> Lorem ipsum 2 lorem</a>
-        </div>
-    </div>
+    <!-- Pytania => do dodania animacja --> 
+    <div class = "questions">
 
-    <div class = "live">
-      <div class="live__img"></div>
-      <div class="live__content">
-          <div class="live__text1">
-            <h2>Lorem ipsum somesome</h2>
-          </div>
-          <div class="live__text2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum tempora ratione dicta dolore, maxime animi rerum vel esse exercitationem temporibus voluptates non, fuga quod. Libero quod alias reiciendis sint!</p>
-          </div>
-        <div class="live__button">
-          <a class = "live__button1" href="#"> Lorem ipsum 1 lorem</a>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class = "membership"></div>
-
-    <div class = "coaching"></div>
-
-    <div class = "question">
-      <div class="question__title">
+      <div class="question__title fade">
         <h2>Lorem questions dolor sit </h2>
       </div>
+
       <div class="questionsWraper">
         <div class="question">
           <label for="check1">Lorem ipsum dolor sit</label>
@@ -101,12 +128,40 @@
           <div class="test">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem laboriosam eos, corrupti itaque necessitatibus nemo optio ipsum nihil id. Debitis iste a  </p>
           </div>
-        </div>                
+        </div>  
+
+        <div class = "carousel">
+          <button class="carousel__button  carousel__button--left is-hidden">
+            <img src="images/left.svg" alt="">
+          </button>
+          <div class = 'carousel__track-container'>
+            <ul class = "carousel__track">
+              <li class = "carousel__slide current-slide carousel__slide-1" ><img class = "carousel__image" src="images/5n.jpg"  alt="metamorphis photo"></li>
+              <li class = "carousel__slide " ><img class = "carousel__image" src="images/5n.jpg"  alt="metamorphis photo"></li>
+              <li class = "carousel__slide " ><img class = "carousel__image" src="images/5n.jpg"  alt="metamorphis photo"></li>
+              <li class = "carousel__slide " ><img class = "carousel__image" src="images/5n.jpg"  alt="metamorphis photo"></li>
+              <li class = "carousel__slide " ><img class = "carousel__image" src="images/5n.jpg"  alt="metamorphis photo"></li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right ">
+            <img src="images/right.svg" alt="">
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator courent-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>  
       </div>
     </div>
 
-    <div class = "metamorphosis"></div>
-  </main>
-  <footer class="footer"></footer>
+      <footer class = 'footer'>
+        <p>FOOTER</p>
+      </footer>
+   
+
+<script src="index.js"></script>
 </body>
 </html>
