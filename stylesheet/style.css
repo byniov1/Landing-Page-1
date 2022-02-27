@@ -15,7 +15,7 @@ body {
 
 .wrapper {
   max-width: 1280px;
-  /* height: 100%; */
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -593,12 +593,6 @@ input:checked + .test {
   }
 }
 
-@media (min-width: 767px) {
-  /* .wrapper {
-    background-color: red;
-  } */
-}
-
 @media (min-width: 768px) {
   .live {
     height: 40vh;
@@ -679,8 +673,12 @@ input:checked + .test {
     width: auto;
   }
 
+  live {
+    height: 100%;
+  }
+
   .live__img {
-    width: 250px;
+    width: 200px;
   }
 
   .live__content {
