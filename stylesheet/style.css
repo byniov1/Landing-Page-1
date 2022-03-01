@@ -320,7 +320,8 @@ a {
 
 .another-section__text {
   margin-bottom: 30px;
-  text-align: justify;
+  text-align: center;
+  line-height: 1.75;
 }
 
 .live {
@@ -666,7 +667,7 @@ input:checked + .test {
   }
 
   .workout__img {
-    height: 30%;
+    width: 50%;
   }
 
   .workout__text1 {
@@ -717,6 +718,10 @@ input:checked + .test {
   .another-section__content {
     width: 50%;
   }
+
+  .another-section__text {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -726,5 +731,8 @@ input:checked + .test {
 
   .another-section__img-wraper {
     width: 50%;
+  }
+
+  .workout__img {
   }
 }
